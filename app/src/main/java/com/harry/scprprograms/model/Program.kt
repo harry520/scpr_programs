@@ -1,0 +1,32 @@
+package com.harry.scprprograms.model
+
+data class Program(
+    val Archived: Boolean,
+    val ArtworkUrl: String,
+    val Author: String,
+    val Categories: List<String>,
+    val Category: String,
+    val ContactEmail: String,
+    val ContactName: String,
+    val Copyright: Any,
+    val CustomFieldData: Any,
+    val DefaultPlaylist: DefaultPlaylistX,
+    val DefaultPlaylistId: String,
+    val Description: String,
+    val DescriptionHtml: String,
+    val ExternalId: Any,
+    val Hidden: Boolean,
+    val Id: String,
+    val Language: String,
+    val Name: String,
+    val Network: String,
+    val NetworkId: String,
+    val OrganizationId: String,
+    val Publisher: Any,
+    val Slug: String,
+    val SocialFacebook: Any,
+    val SocialShowSupportLabel: Any,
+    val SocialShowSupportUrl: Any,
+    val SocialTwitter: Any,
+    val SocialWeb: String
+)
