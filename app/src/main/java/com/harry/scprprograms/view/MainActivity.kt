@@ -1,5 +1,6 @@
 package com.harry.scprprograms.view
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -31,11 +32,10 @@ class MainActivity : AppCompatActivity() {
             mainViewModel.programs.collect {
                 when (it.status) {
                     Status.EMPTY -> Unit
-                    Status.SUCCESS ->
-                        displayPrograms(it.data?.body()!!)
+                    Status.SUCCESS -> displayPrograms(it.data?.body()!!)
                     Status.ERROR -> Toast.makeText(
                         this@MainActivity,
-                        "Something went wrong.",
+                        "Something went wrong",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -46,7 +46,12 @@ class MainActivity : AppCompatActivity() {
     private fun displayPrograms(programs: Programs) {
         val programAdapter = ProgramsAdapter()
         programAdapter.differ.submitList(programs.Programs)
-        binding.programsRecyclerView.layoutManager = GridLayoutManager(this, 2)
+        val spanCount =
+            if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT)
+                2
+            else
+                4
+        binding.programsRecyclerView.layoutManager = GridLayoutManager(this, spanCount)
         binding.programsRecyclerView.adapter = programAdapter
     }
 }

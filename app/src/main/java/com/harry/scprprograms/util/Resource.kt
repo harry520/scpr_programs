@@ -1,4 +1,6 @@
-package com.example.scprprograms.util
+package com.harry.scprprograms.util
+
+import com.example.scprprograms.util.Status
 
 data class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

@@ -9,35 +9,7 @@
         android:id="@+id/topLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="60dp"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#d3d3d3"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/programArtwork"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp" />
-
-            <TextView
-                android:id="@+id/programDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="15dp"
-                android:foregroundGravity="center"
-                tools:text="Program description" />
-
-        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/programClipsRecyclerView"
@@ -50,6 +22,7 @@
         android:id="@+id/clipPlayerLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -60,32 +33,59 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/programArtworkSnap"
                 android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/program_artwork_snap" />
 
             <TextView
                 android:id="@+id/programName"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
+                android:maxLines="2"
                 android:textSize="18sp"
                 tools:text="LA Times" />
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/playPauseIcon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/stop"
-            android:visibility="invisible"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/rewindIcon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/icon_to_rewind"
+                android:src="@drawable/ic_rewind" />
+
+            <ImageView
+                android:id="@+id/playPauseIcon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/icons_to_switch_for_play_and_stop"
+                android:src="@drawable/ic_pause" />
+
+            <ImageView
+                android:id="@+id/fastForwardIcon"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/icon_to_fast_forward"
+                android:src="@drawable/ic_fast_forward" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

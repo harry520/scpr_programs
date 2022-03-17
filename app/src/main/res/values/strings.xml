@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SCPR Programs</string>
+    <string name="icon_to_fast_forward">Icon to fast forward</string>
+    <string name="icon_to_rewind">Icon to rewind</string>
+    <string name="icons_to_switch_for_play_and_stop">Icons to switch for play and stop</string>
+    <string name="program_artwork">Program artwork</string>
+    <string name="program_artwork_snap">Program artwork snap</string>
+    <string name="program_image">Program Image</string>
 </resources>

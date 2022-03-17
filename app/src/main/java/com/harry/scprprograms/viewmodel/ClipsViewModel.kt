@@ -2,9 +2,9 @@ package com.harry.scprprograms.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.scprprograms.util.Resource
 import com.harry.scprprograms.model.Clips
 import com.harry.scprprograms.repository.SCPRProgramsRepository
+import com.harry.scprprograms.util.Resource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

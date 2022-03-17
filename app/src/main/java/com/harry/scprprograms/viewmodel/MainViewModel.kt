@@ -1,11 +1,10 @@
 package com.harry.scprprograms.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.scprprograms.util.Resource
 import com.harry.scprprograms.model.Programs
 import com.harry.scprprograms.repository.SCPRProgramsRepository
+import com.harry.scprprograms.util.Resource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -20,7 +19,6 @@ class MainViewModel(private val scprProgramsRepository: SCPRProgramsRepository) 
             _programs.value = Resource.success(scprProgramsRepository.getPrograms())
         } catch (e: Exception) {
             _programs.value = Resource.error(e.message.toString(), null)
-            Log.d("Harry", e.message.toString())
         }
     }
 }

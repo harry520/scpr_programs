@@ -3,9 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_fast_forward.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_fast_rewind.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_music_note.xml" value="0.121" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_play_arrow.xml" value="0.121" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/ic_rewind.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/play_arrow.xml" value="0.2265" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/drawable/stop.xml" value="0.2265" />
         <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/activity_clips.xml" value="0.22826086956521738" />
         <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/activity_program_clips.xml" value="0.20505344995140914" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/fragment_programs.xml" value="0.22826086956521738" />
+        <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/program_clips_header.xml" value="0.22826086956521738" />
         <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/program_clips_item.xml" value="0.22826086956521738" />
         <entry key="..\:/Documents/Job Interview Pre-Screen Tests/Southern California Public Radio/SCPRPrograms/app/src/main/res/layout/programs_item.xml" value="0.1234375" />
       </map>
