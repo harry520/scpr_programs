@@ -4,7 +4,6 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.*
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.graphics.drawable.Drawable
 import android.media.AudioAttributes
 import android.media.AudioManager
@@ -42,9 +41,6 @@ import com.harry.scprprograms.util.Constants.ACTION_REWIND
 import com.harry.scprprograms.util.Constants.CHANNEL_ID_2
 import com.harry.scprprograms.viewmodel.ClipsViewModel
 import com.harry.scprprograms.viewmodel.ClipsViewModelProviderFactory
-import java.io.IOException
-import java.net.HttpURLConnection
-import java.net.URL
 
 class ProgramClipsActivity : AppCompatActivity(), ActionPlaying {
     private lateinit var binding: ActivityProgramClipsBinding

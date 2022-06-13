@@ -19,7 +19,7 @@ class NotificationReceiver : BroadcastReceiver() {
                     p0?.startService(intent)
                 }
                 ACTION_PLAY_PAUSE -> {
-                     intent.putExtra("myActionName", p1.action)
+                    intent.putExtra("myActionName", p1.action)
                     p0?.startService(intent)
                 }
                 ACTION_FAST_FORWARD -> {

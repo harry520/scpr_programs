@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class ClipsViewModel(private val scprProgramsRepository: SCPRProgramsRepository): ViewModel() {
+class ClipsViewModel(private val scprProgramsRepository: SCPRProgramsRepository) : ViewModel() {
     private val _programClips = MutableStateFlow<Resource<Response<Clips>>>(Resource.empty())
     val programClips = _programClips.asStateFlow()
 
